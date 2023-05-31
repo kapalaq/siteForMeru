@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Our story</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    {% load static %}
+    <!-- Favicon -->
+    <link href="{% static 'img/sloth.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static '/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="#" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2 text-primary">US</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+            </div>
+            <a href="#" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2 text-primary">US</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#story" class="nav-item nav-link">Story</a>
+                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/us-0.jpg' %}" style="object-fit: cover; filter: blur(4px);">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h3 class="display-1 font-secondary text-white mt-n3 mb-md-4">Ruslan & Meru</h3>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">written in fancy way</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" onclick="window.open('https://www.youtube.com/watch?v=uBYRv7YCwsQ', '_blank')">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/shrek.jpg' %}" style="object-fit: cover; filter: blur(6px);">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">You and me</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">in the study room with this song</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" onclick="window.open('https://www.youtube.com/watch?v=_A3LTEe97OY', '_blank')">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About Us</h6>
+                <h1 class="display-4"><span class="font-weight-normal">Ruslan NU</span> <span class="font-secondary">& Meru <3</span></h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Abuser</h3>
+                        <p>Безнадежный романтик, абьюзер, ужасный парень и просто человек, который априори виноват. Намекните ему на прогулку на закате, и он пойдет смотреть на него сам. Дайте ему подержать вашу кошку хоть на секунду, и он убежит с нею дальше, чем вы способны достать. Бедную девушку абьюзит, газлайтит, не дает ей нормально спать. Одним словом: аморальный червь.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3">Author: Drama King</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/forfvcksvke/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/ruslan-1.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="{% static 'img/meru-1.jpg' %}" style="object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">The Victim of Abusing</h3>
+                        <p>Бедная, ранимая и милая жертва абьюза джентельмена выше. Солнышко его жизни. Не только героически терпела его тупость и слепоту, но и сейчас терпит постоянный абьюз. Ради него старается, как не привыкла стараться, делая его самым счастливым парнем на свете. Сногшибательная красота и невероятный характер, сочетающий независимость и нежность влюбляют с одного взгляда через Zoom.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3">Author: Her lovely BF</h3>
+                        <div class="position-relative">
+                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/s.meruu/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Our Love Story</h6>
+                <h1 class="font-secondary display-4">Korean Drama</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="{% static 'img/us-1.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">First Meet</h4>
+                            <p class="text-uppercase mb-2">07 Aug 2022</p>
+                            <p class="m-0">For the first time we met during our group gathering about Treasure Hunt. It was the first time I saw you personally, but, interestingly, keen on you through Zoom. Tried to be closer as much as I could. Occasionally, I did so successfully, so we were kind of best friends back then.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Первое Признание</h4>
+                            <p class="text-uppercase mb-2">Примерно 25 Сент 2022</p>
+                            <p class="m-0">Когда мои чувства и наше с тобой общение достигли пика, ты меня подтолкнула признаться тебе. Это было бы интересной историей любви с первого взгляда, но ты сказала мне, что тебе нравился кто-то другой, из-за чего я отбросил какие-то попытки и надежду на месяцы вперед.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="{% static 'img/us-2.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="{% static 'img/us-3.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Араласпаймыз</h4>
+                            <p class="text-uppercase mb-2">01 Jan 2050</p>
+                            <p class="m-0">Мен қатты ренжідім және сенімен сөйлесуді тоқтатуды шештім. Бірақ бір топта болғанымызға байланысты сені өмірімнен толықтай ала алмадым. Шағын кездесулер мен сөздер көп ұзамай диалогқа ұласты.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Talking Stage (again)</h4>
+                            <p class="text-uppercase mb-2">Approximately 26 Feb 2023</p>
+                            <p class="m-0">In spite of everything that happened in the few months after the rejection, we still continued our friendship. We chatted about the most typical topics, joked around, and mostly went out with Aidana. You were my best friend in those days, and it felt like a level beyond which I had no right to go.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="{% static 'img/us-4.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="{% static 'img/us-5.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">День и Ночь</h4>
+                            <p class="text-uppercase mb-2">26-27 Апр 2023</p>
+                            <p class="m-0">И вот день когда все достигла своего пика. Наше общение, мои чувства, атмосфера и доверие. Я решил дать шанс этой долгоиграющей истории и подстроил все так, что всю эту ночь мы были наедине. И знаешь, поход на игровую площадку Expo, посиделки в турче рука к руке, авантюра досидеть до 6 утра и посмотреть вместе на рассвет - это кусочки счастья, которому я рад, которое я лелею. Это счастье - ты.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Кітапханада</h4>
+                            <p class="text-uppercase mb-2">02 Мамыр 2023</p>
+                            <p class="m-0">Осыдан кейін мен өз сезімдеріме күмәнданбадым.  Ал сен өзіңдікіне күмәнданбадың.  2 мамырда кітапханада бірге оқыдық.  Жүрегім шыдатпай соғып кетті.  Сосын күннің батуын тамашалауға бардық.  Ал біз кездесе бастадық.  Мен ол кезде айтпадым, бірақ қазір айта аламын: мен сені сүйемін.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="{% static 'img/us-6.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="{% static 'img/us-7.jpg' %}" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Last Day in NU</h4>
+                            <p class="text-uppercase mb-2">05 May 2023</p>
+                            <p class="m-0">Last day in NU was as precious as sad. Everything that can happen actually happened in one day. I felt all kind of ups and downs. The moment when we danced or the moment when you vanished to talk. All party or how we sit on the floor. How I was stunned by the way you looking or how I told you Bye in Daily Cup. Running for this gdamn pillow. But, honestly, your gift and presence themselves made me happier for the next three months of summer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Настоящее</h4>
+                            <p class="text-uppercase mb-2">02 Мая 2023</p>
+                            <p class="m-0">Сейчас ты стала для меня всем. Я дорожу тобой, этими отношениями и каждым воспоминанием что мы создаем вместе. Сегодняшний день празднует месяц наших отношений и месяц на расстоянии друг от друга. Я жду не дождусь того дня, когда смогу тебя обнять, и я уверен, что до него мы дойдем уверенно.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="{% static 'img/us-8.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">50 shades of US... and our child Aidana</h6>
+            <h1 class="font-secondary display-4 text-white">Gallery of Memories</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-10.jpg' %}" alt="">
+                <a href="img/us-10.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-11.jpg' %}" alt="">
+                <a href="img/us-11.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-12.jpg' %}" alt="">
+                <a href="img/us-12.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-13.jpg' %}" alt="">
+                <a href="img/us-13.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-14.jpg' %}" alt="">
+                <a href="img/us-14.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-15.jpg' %}" alt="">
+                <a href="img/us-15.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-16.jpg' %}" alt="">
+                <a href="img/us-16.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-17.jpg' %}" alt="">
+                <a href="img/us-17.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-18.jpg' %}" alt="">
+                <a href="img/us-18.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-19.jpg' %}" alt="">
+                <a href="img/us-19.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="{% static 'img/us-20.jpg' %}" alt="">
+                <a href="img/us-20.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="https://www.instagram.com/s.meruu/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/forfvcksvke/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white">This is my present</p>
+                <span class="px-3">|</span>
+                <p class="text-white">For our first month</p>
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#">For Meru</a>. Stollen from <a class="text-primary" href="https://htmlcodex.com" target="_blank">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
