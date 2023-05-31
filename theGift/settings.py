@@ -21,13 +21,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-with open("C:/Users/mainm/OneDrive/Рабочий стол/project/theGift/theGift/key", 'r') as file:
+with open(BASE_DIR / "theGift/key.txt", 'r') as file:
     SECRET_KEY = file.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['siteformeru-production.up.railway.app', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://siteformeru-production.up.railway.app']
 
 
 # Application definition
@@ -135,7 +137,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 SECURE_HSTS_SECONDS = 60
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 
