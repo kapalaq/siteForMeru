@@ -27,9 +27,9 @@ with open(os.path.join(BASE_DIR, "theGift/key.txt"), 'r') as file:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['siteformeru-production.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['storyofus.up.railway.app', '127.0.0.1']
 
-CSRF_TRUSTED_ORIGINS = ['https://siteformeru-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://storyofus.up.railway.app']
 
 
 # Application definition
